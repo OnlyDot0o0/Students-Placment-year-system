@@ -1,0 +1,78 @@
+#SelectedFiles{
+    display: none;
+}
+
+.browse{
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(228, 4, 44);
+    justify-content: center;
+}
+.browse:hover{
+    background-color: #6e0113;
+    cursor: pointer;
+}
+
+
+.browse{
+
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+input[type=submit]{
+    margin: 0px !important;
+    display:block!important;
+}
+
+.browse-flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 100%;
+
+    background-color: rgba(0, 255, 255, 0);
+
+}
+
+.browse-size{
+    width: 50%;
+}
+
+.upload-cont{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 80%;
+    background-color: rgba(7, 167, 90, 0);
+    justify-content: center;
+
+}
+
+.upload-cont-col{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    background-color: rgba(129, 27, 85, 0);
+}
+
+.txt{
+    font-size: medium;
+}
+
+@media screen and (max-width: 500px) {
+    input[type=submit]{
+        margin: 0px !important;
+        display:block!important;
+        width: 100%;
+    }
+
+
+}

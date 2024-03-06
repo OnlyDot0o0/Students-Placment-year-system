@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+.navbar{
+    background-color: #e4042c;
+
+    padding: 20px;
+    font-family: Lato;
+    font-size: medium;
+    color: white;!important;
+    text-decoration:  none !important;
+
+}
+
+td button{
+    color: white;!important;
+}
+td .reject{
+    background-color: #e4042c;
+}
+
+td .approve{
+    background-color: #07A75A;
+}
+
+td .flag{
+    background-color: #d07008;
+}
+td .contact{
+    background-color: #0096d2;
+}
+
+.center{
+    position: absolute;
+    left: 50%;
+    margin-left: -100px !important;  /* 50% of your logo width */
+    display: block;
+
+}
+
+li a{
+    text-decoration:  none !important;
+    color: white;
+}
+.ham{display: none}
+
+.option{
+    background-color: white;
+    color: black;
+    padding: 2%;
+}
+
+
+.panel-body:hover>*{
+    background-color: #c5c5c5;
+
+}
+
+input[type=text]{
+    width: 100%!important;
+}
+@media screen and (max-width: 1280px){
+    .ham{display: block; translate: 0 30%; float: right}
+    .menu{display: none}
+}
+
+@media screen and (max-width: 800px){
+    .center{display: none;}
+    .ham{display: block; font-size: x-large}
+    .menu{display: none;}
+    .description{
+        width: 70%;
+
+    }
+    .btns-status{
+        display: flex;flex-direction: column;
+
+    }
+    .btns-status>*{
+        margin-top: 20%;
+        padding: 20%;
+
+    }
+}
+
+@media screen and (max-width: 900px){
+
+    .btns-status{
+        display: flex;flex-direction: column;
+
+    }
+
+    .btns-status>*{
+        margin-top: 10%;}
+}
+
+@media screen and (max-width: 500px){
+    .flex-row{
+        padding:0px!important;
+    }
+    .btns-status>*{
+
+        font-size: xx-small;
+    }
+
+    .tf{
+        padding: 0px!important;
+    }
+
+}
+
+#search{
+    margin: 0px;
+    margin-bottom: 20px;
+}
+
+#help{
+    bottom: 0px;
+    position: fixed;
+    z-index: 500;
+    translate: 20% -20%;
+    font-size: xxx-large;
+    text-decoration: none;
+    color: #e4042c;
+    line-height: 0px;
+}
+
+#help>a{   z-index: 500;  text-decoration: none;
+    color: #e4042c;}
+#help>a:hover{    cursor: pointer; color: #6e0113}
+
+

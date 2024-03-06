@@ -1,0 +1,186 @@
+:root{
+    /*usage var(--mainColor) */
+    --mainColor: #E4042C;
+}
+/*Used from CompanyFormBranch - Solve when merging*/
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+.bar {
+    background-color: rgb(228, 4, 44);
+    margin: 0;
+    padding: 2px;
+    height: 110px;
+    width: 100vw;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    z-index: -1;
+    align-items: center;
+    position: absolute;
+    font-family: "Lato Medium";
+}
+html{
+
+    height: 100%;
+}
+.title{
+    z-index: 100;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0px;
+    height: 100%;
+    top:0px;
+    font-family: Lato;
+
+}
+.flex-row{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    text-wrap: normal;
+
+}
+
+input[type=text], select {
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+    color: #ffffff;
+    font-size: large;
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #0096d2;
+}
+textarea{
+    margin: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+    resize: vertical;
+    width: 100%;
+    height: 50px;
+    max-height: 200px;
+}
+input[type=submit]:hover{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+    border-radius: 2px;
+    border-color: rgba(0, 0, 0, 0);
+    background-color: #026d94;
+}
+
+input[type=email]{
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+input[type=date]{
+
+    padding: 1rem;
+    margin: 1rem;
+    display: inline-block;
+    box-sizing: border-box;
+}
+
+.thx-bg{
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    color: #252525;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 1.6rem;
+}
+
+.flex-column{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.bg-logo{
+    z-index: 5;
+    position: absolute;
+    margin: 0;
+    padding: 4px;
+    height: 100px;
+    width: 100vw;
+    background-color: #e4042c;
+}
+
+.warning-class{
+    color: red;
+}
+
+button{
+    background-color: red;
+    color: white;
+    border-color: transparent;
+}
+
+
+
+
+@media only screen and (max-width: 900px) {
+    img {
+        content: url("../../../css/uniLogoCropped.png");
+
+    }
+
+    .title{
+        font-size: medium;
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+
+    input[type=text]{
+        width: 80%;
+    }
+
+    input[type=submit]{
+        width: 80%;
+    }
+
+    body{
+        overflow-x: hidden;
+
+    }
+    .title{
+        display: none!important;
+    }
+
+    .flex-row{
+        margin-top: 30%;
+    }
+
+}
+
+

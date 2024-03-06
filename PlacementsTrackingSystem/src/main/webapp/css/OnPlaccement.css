@@ -1,0 +1,26 @@
+
+.table td, .table th {
+    word-wrap: break-word;
+}
+/* Default font size for all devices */
+td {
+    font-size: 16px;
+}
+
+/* Adjust font size for screens smaller than 768px */
+@media only screen and (max-width: 767px) {
+    td {
+        font-size: 14px;
+    }
+}
+
+/* Adjust font size for screens smaller than 576px */
+@media only screen and (max-width: 575px) {
+    td {
+        font-size: 12px;
+    }
+}
+img {
+    width: 100%;
+    height: auto;
+}

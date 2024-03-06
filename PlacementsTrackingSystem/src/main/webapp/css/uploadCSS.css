@@ -1,0 +1,376 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap');
+.bar {
+    background-color: rgb(228, 4, 44);
+    margin: 0;
+    padding: 8px;
+    padding-right: 45px;
+    padding-left:35px;
+    height: 100px;
+    width: 100vw;
+    top: 0px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    z-index: -1;
+    align-items: center;
+    position: absolute;
+    font-family: "Lato Medium";
+}
+
+.title{
+    z-index: 100;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    color: white;
+}
+
+html{
+
+    height: 100%;
+}
+
+body{
+
+    margin: 0;
+    padding: 0;
+    border: 0px;
+
+    top:0px;
+    font-family: Lato;
+    font-size: 20px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+
+
+}
+
+.main-cont-col{
+
+    top: 0px;
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgba(210, 105, 30, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+}
+
+.main-cont-row{
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgba(127, 255, 0, 0);
+}
+
+.upload-cont-flex{
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem;
+    text-align: center;
+    padding-left: 3rem;
+    padding-right: 3rem;
+
+    border-color: #4f0111;
+
+
+}
+
+.upload-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+    width: 100%;
+    background-color: rgba(0, 255, 255, 0);
+
+}
+
+.link-cont{
+
+
+    background-color: rgba(37, 37, 37, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-decoration: none;
+
+
+
+}
+
+.upload-submit{
+    padding: 1rem;
+    width: 100%;
+
+    color: rgb(0, 150, 210);
+    font-size: large;
+    border-radius: 2px;
+
+    border-style: solid;
+    border-color: rgb(0, 150, 210);
+    background-color: rgba(0, 150, 210, 0);
+
+
+
+}
+
+h2{text-align: center}
+h3{text-align: center}
+
+.upload-submit:hover{
+
+    color: white;
+    background-color: rgb(0, 150, 210);
+    cursor: pointer;
+
+
+}
+
+.vert-bar{
+    background-color: #252525;
+    height: 100%;
+    width: 2px;
+
+}
+
+.hrz-bar{
+
+    background-color: rgba(37, 37, 37, 0);
+    width: 100%;
+
+    border-bottom: #252525 dashed;
+    height: 2px;
+}
+
+.upload-main-cont{
+    padding: 20px;
+    max-width: 20%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(250, 235, 215, 0);
+    justify-content: center;
+}
+
+.download{
+    padding-top: 20px;
+}
+
+a{
+    font-style: italic;
+    text-decoration: none;
+    color:#0096d2;
+    text-align: center;
+    background-color: rgba(210, 105, 30, 0);
+}
+
+a:hover{
+    color: #003f5d;
+    cursor: pointer;
+}
+
+.browse{
+
+    cursor: pointer;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+
+}
+
+.contact-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    bottom: 0px;
+    background-color: rgba(0, 63, 93, 0);
+}
+
+
+#SelectedFiles{
+    display: none;
+}
+
+.upload-ico{
+    width: 15%;
+    filter: invert();
+
+}
+
+.browse-flex{
+
+
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(228, 4, 44);
+    justify-content: center;
+}
+.browse-flex:hover{
+    background-color: #6e0113;
+    cursor: pointer;
+}
+
+
+.alert{
+
+    position: absolute;
+    border-radius: 2px;
+    padding: 20px;
+    z-index: 5000;
+    bottom: 0px;
+    right: 0px;
+    background: #07A75A;
+    color: #ffffff;
+
+}
+
+
+
+.closebtn{
+    padding: 0.2rem;
+
+}
+
+@media only screen and (max-width: 1000px) {
+    .uniLogo{
+        content: url("../../../css/uniLogoCropped.png");
+    }
+    .upload-ico{
+        display: none;
+    }
+    .vert-bar{
+        display: none;
+    }
+    .upload-main-cont{
+        max-width: 100%;
+    }
+
+    body{
+        font-size: small;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+    .main-cont-row{
+        flex-direction: column;
+    }
+    .main-cont-col{
+        margin-top: 1vh;
+
+        width: 100vw;
+
+    }
+
+    a{
+        font-size: large;
+    }
+
+    .contact-section{
+
+        bottom: 0px;
+        text-align: center;
+        font-size: larger;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+    }
+
+    .bar{
+        max-width: 100vw;
+    }
+
+    .hrz-bar{
+        width: 100%;
+
+
+    }
+}
+
+@media only screen and (min-width: 900px){
+    body{font-size: medium}
+
+
+}
+
+@media only screen and (max-width: 600px){
+    .title{font-size: medium}
+
+
+}
+
+
+@media only screen and (min-width: 340px) and (max-width:361px ){
+    .title{font-size: small}
+
+}
+
+@media only screen and (max-width: 340px) {
+    .title{display: none}
+
+}
+
+
+@media only screen and (min-width: 900px){
+    body{font-size: medium}
+
+}
+
+@media only screen and (max-height: 600px)
+{
+body{
+    overflow-y: scroll;
+}
+.main-cont-col{
+    margin-top: 2%;
+    top: 10%;
+    height: 110vh;
+}
+
+    .contact-section{
+        position: fixed;
+    }
+
+
+}
+
+@media screen and (max-height: 430px) {
+
+    .main-cont-col{
+        margin-top: 10%;
+        top: 5%;
+        height: 150vh;
+    }
+
+}
+
+@media only screen and (max-height: 300px){
+
+    .main-cont-col{
+        margin-top: 10%;
+        top: 10%;
+        height: 200vh;
+    }
+}
+
+@media only screen and (max-height: 200px){
+    body{
+        font-size: xx-small;
+    }
+    .main-cont-col{
+        margin-top: 10%;
+        top: 10%;
+        height: 250vh;
+    }
+}
+
