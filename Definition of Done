@@ -1,0 +1,7 @@
+Definition of Done
+1. Work is tested and reviewed by at least 1 other person.
+2. All features are coded.
+3. It is implemented with the rest of the code.
+4. User story is deemed acceptable by the tester in terms of the fields : usability, functionality and visibility
+5. Documentation/comments are included.
+6. User stories should be merged to the main branch when completed
